@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Set keyboard repeat delay and speed
+xset r rate 300 50 &
+
+# Set numlock ON
+numlockx &
+
+# Change X shaped default cursor
+xsetroot -cursor_name left_ptr &
+
+# Launch background apps
+sxhkd -m 1 &  # -m option to 1 for non querty keyboard layouts
+
+# Launch WM
+exec bspwm

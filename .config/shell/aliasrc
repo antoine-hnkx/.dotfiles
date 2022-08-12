@@ -1,0 +1,18 @@
+# Dotfiles
+alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+
+# Files shortcuts
+alias aliasrc="$EDITOR $XDG_CONFIG_HOME/shell/aliasrc"
+alias bspwmrc="$EDITOR $XDG_CONFIG_HOME/bspwm/bspwmrc"
+alias sxhkdrc="$EDITOR $XDG_CONFIG_HOME/sxhkd/sxhkdrc"
+alias xinitrc="$EDITOR $XDG_CONFIG_HOME/X11/xinitrc"
+alias zshrc="$EDITOR $XDG_CONFIG_HOME/zsh/.zshrc"
+
+# Default options
+alias startx="startx $XINITRC"
+alias mkdir="mkdir -pv"
+alias ls="ls -hN --color=auto --group-directories-first"
+
+# Other aliases
+alias ll="ls -Al"
+

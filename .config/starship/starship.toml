@@ -1,0 +1,8 @@
+# Starship prompt configuration
+
+# No new line between prompts
+add_newline = false
+
+# Prompt format
+format = "$directory$character"
+right_format = "$all"
