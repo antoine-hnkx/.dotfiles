@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Set keyboard map
+setxkbmap be
+
 # Set keyboard repeat delay and speed
 xset r rate 300 50 &
 
