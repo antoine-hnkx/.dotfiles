@@ -3,3 +3,8 @@
 [user]
 	name = Antoine Honinckx
 	email = 65335212+antoine-hnkx@users.noreply.github.com
+[push]
+	default = current
+	autoSetupRemote = true
+[pull]
+	default = current
