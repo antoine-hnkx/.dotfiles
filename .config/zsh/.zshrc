@@ -5,5 +5,8 @@
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 autoload -Uz compinit && compinit
 
+# Disable command history if starting with space
+setopt histignorespace
+
 # Starship prompt (should be last line)
 [ "$TERM" != "linux" ] && eval "$(starship init zsh)"
