@@ -14,5 +14,5 @@ alias mkdir="mkdir -pv"
 alias ls="ls -hN --color=auto --group-directories-first"
 
 # Other aliases
-alias ll="ls -Al"
+alias ll="ls -Alhv"
 
