@@ -7,4 +7,3 @@ setopt histignorespace
 
 # Independant shell config
 source "$XDG_CONFIG_HOME/shell/shellrc"
-source "$XDG_CONFIG_HOME/shell/promtrc"

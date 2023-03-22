@@ -1,2 +1,6 @@
 # Aliases
 source "$XDG_CONFIG_HOME/shell/aliasrc"
+
+# Prompts
+export PS1="(%y%) [%n@%M]: "
+[ "$TERM" != "linux" ] && eval "$(starship init zsh)"
