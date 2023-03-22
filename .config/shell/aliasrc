@@ -15,4 +15,4 @@ alias ls="ls -hN --color=auto --group-directories-first"
 
 # Other aliases
 alias ll="ls -Alhv"
-
+alias vim="nvim"

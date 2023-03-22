@@ -1,6 +1,3 @@
-# Aliases
-[ -f "${XDG_CONFIG_HOME}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME}/shell/aliasrc"
-
 # Enable case-insensitive completion
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 autoload -Uz compinit && compinit
@@ -8,5 +5,6 @@ autoload -Uz compinit && compinit
 # Disable command history if starting with space
 setopt histignorespace
 
-# Starship prompt (should be last line)
-[ "$TERM" != "linux" ] && eval "$(starship init zsh)"
+# Independant shell config
+source "$XDG_CONFIG_HOME/shell/shellrc"
+source "$XDG_CONFIG_HOME/shell/promtrc"

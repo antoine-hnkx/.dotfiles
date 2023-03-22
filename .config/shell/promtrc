@@ -1,0 +1,2 @@
+# Starship prompt
+[ "$TERM" != "linux" ] && eval "$(starship init zsh)"
