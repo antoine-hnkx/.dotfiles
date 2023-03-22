@@ -1,1 +1,2 @@
-source "$XDG_CONFIG_HOME/shell/env"
+# Hardcoded path since XDG env vars not yet set
+source "$HOME/.config/shell/env"
