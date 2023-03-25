@@ -16,4 +16,4 @@ xsetroot -cursor_name left_ptr &
 sxhkd -m 1 &  # -m option to 1 for non querty keyboard layouts
 
 # Launch WM
-exec bspwm
+exec awesome
