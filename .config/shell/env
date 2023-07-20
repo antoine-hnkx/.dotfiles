@@ -1,7 +1,9 @@
 # Default applications
 export TERMINAL=alacritty
 export BROWSER=google-chrome-stable
-export EDITOR=vim
+export FILE_BROWSER=
+export EDITOR=nvim
+export VISUAL_EDITOR=code
 export SHELL=zsh
 
 # Update PATH
@@ -15,6 +17,16 @@ export XDG_STATE_HOME=${XDG_STATE_HOME:="$HOME/.local/state"}
 export XDG_DATA_HOME=${XDG_DATA_HOME:="$HOME/.local/share"}
 export XDG_CACHE_HOME=${XDG_CACHE_HOME:="$HOME/.cache"}
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
+export XDG_SESSION_TYPE=${XDG_SESSION_TYPE:="wayland"}
+export XDG_SESSION_DESKTOP=${XDG_SESSION_DESKTOP:="Wayfire"}
+export XDG_CURRENT_DESKTOP=${XDG_CURRENT_DESKTOP:="Wayfire"}
+
+export XDG_DESKTOP_DIR="$HOME"
+export XDG_DOWNLOAD_DIR="$HOME/Downloads/"
+export XDG_DOCUMENTS_DIR="$HOME"
+export XDG_MUSIC_DIR="$HOME/Music/"
+export XDG_PICTURES_DIR="$HOME/Pictures/"
+export XDG_VIDEOS_DIR="$HOME"
 
 # XDG Path Fixes
 export XINITRC="$XDG_CONFIG_HOME/X11/xinitrc"
@@ -22,4 +34,5 @@ export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export HISTFILE="$XDG_DATA_HOME/zsh/history"
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
+export WAYFIRE_CONFIG_FILE="$XDG_CONFIG_HOME/wayfire/wayfire.ini"
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
