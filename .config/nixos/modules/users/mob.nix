@@ -5,38 +5,38 @@
     uid = 1000;
     isNormalUser = true;
     description = "Mob";
-    extraGroups = [ "networkmanager" "wheel" ]; # check if other groups necessary like video audio docker or whatever
+    extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       google-chrome
       vscode
       starship
       alacritty
-	  vlc
+      vlc
       amberol
       inkscape
       bruno
-	  discord
-	  lazygit
-	  lazydocker
-	  docker
-	  killall
-	  fzf
-	  yt-dlp
-	  ffmpeg
-	  asdf-vm
-	  du-dust
-	  dogdns
-	  httpie
-	  rclone
-	  rsync
-	  tldr
-	  fd
-	  eza
-	  bat
-	  viddy
-	  duf
-	  tokei
-	  bottom
+      discord
+      lazygit
+      lazydocker
+      docker
+      killall
+      fzf
+      yt-dlp
+      ffmpeg
+      asdf-vm
+      du-dust
+      dogdns
+      httpie
+      rclone
+      rsync
+      tealdeer
+      fd
+      eza
+      bat
+      viddy
+      duf
+      tokei
+      bottom
     ];
   };
 }

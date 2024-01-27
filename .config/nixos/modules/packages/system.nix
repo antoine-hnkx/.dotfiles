@@ -5,6 +5,6 @@
     git
     wget
     vim
-    neovim
+    neovim-unwrapped
   ];
 }
