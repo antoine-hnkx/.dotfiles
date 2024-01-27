@@ -9,8 +9,12 @@ alias ls="ls -hN --color=auto --group-directories-first"
 alias yay-update="yay -Syu"
 alias yay-install="yay -Slq | fzf | xargs -o yay -S --needed"
 alias yay-remove="yay -Qeq | fzf | xargs -o yay -Rns"
-alias yay-clean="yes|yay -Scc"
+alias yay-clean="yes | yay -Scc"
 alias yay-list="yay -Qet"
+
+# NixOS
+alias nixos-regenerate-hardware-config="nixos-generate-config --show-hardware-config > $XDG_CONFIG_HOME/nixos/hosts/$HOST/hardware-configuration.nix"
+alias nixos-switch="sudo nixos-rebuild switch --flake $XDG_CONFIG_HOME/nixos/.#$HOST"
 
 # Other aliases
 alias ll="ls -Alhv"
