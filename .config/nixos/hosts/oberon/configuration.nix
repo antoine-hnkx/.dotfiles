@@ -10,6 +10,7 @@
     ntfs3g
   ];
   boot.supportedFilesystems = [ "ntfs" ];
+  fileSystems."/mnt/Data".options = [ "rw" "uid=1000" ];
   # 1. mount ntfs drive
   # ---- sudo mount /dev/sda1 /mnt/Data -t ntfs3
   # 2. regenerate hardware-config.nix

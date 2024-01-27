@@ -2,6 +2,7 @@
 
 {  
   users.users.mob = {
+    uid = 1000;
     isNormalUser = true;
     description = "Mob";
     extraGroups = [ "networkmanager" "wheel" ]; # check if other groups necessary like video audio docker or whatever
