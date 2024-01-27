@@ -1,0 +1,68 @@
+[
+	{
+		"key": "ctrl+p",
+		"command": "workbench.action.showCommands",
+		"description": "Open command palette."
+	},
+	{
+		"key": "ctrl+o",
+		"command": "workbench.action.quickOpen",
+		"description": "Open file.",
+	},
+	{
+		"key": "ctrl+shift+o",
+		"command": "revealFileInOS",
+		"description": "Show file in file explorer.",
+	},
+	{
+		"key": "ctrl+n",
+		"command": "explorer.newFile",
+		"description": "Create new file.",
+	},
+	{
+		"key": "ctrl+shift+n",
+		"command": "explorer.newFolder",
+		"description": "Create new folder.",
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "workbench.action.closeAuxiliaryBar",
+		"description": "Close secondary sidebar.",
+		"when": "view.workbench.view.search.visible"
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "workbench.action.findInFiles",
+		"description": "Open search view.",
+		"when": "!view.workbench.view.search.visible"
+	},
+	{
+		"key": "ctrl+f",
+		"command": "closeFindWidget",
+		"description": "Close search widget.",
+		"when": "editorFocus && findWidgetVisible && !isComposing"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "editor.action.smartSelect.expand",
+		"description": "Extend text selection.",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+d",
+		"command": "editor.action.selectHighlights",
+		"description": "Add new cursor to every occurence of the highlighted text.",
+		"when": "editorFocus"
+	},
+	{
+		"key": "escape",
+		"command": "removeSecondaryCursors",
+		"description": "Remove extra cursors.",
+		"when": "editorHasMultipleSelections && textInputFocus"
+	},
+	{
+		"key": "ctrl+shift+g",
+		"command": "git-graph.view",
+		"description": "Show Git Graph view.",
+	}
+]
