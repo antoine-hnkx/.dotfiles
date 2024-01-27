@@ -1,6 +1,6 @@
 { pkgs, ... }:
 
-{  
+{
   services.xserver.enable = true;
   services.xserver.excludePackages = with pkgs; [
     xterm
@@ -11,7 +11,7 @@
   programs.dconf.enable = true;
 
   environment.gnome.excludePackages = (with pkgs; [
-    baobab 
+    baobab
     #loupe
     evince
     snapshot
@@ -47,5 +47,7 @@
     gnome.gnome-tweaks
     gnomeExtensions.dash-to-panel
     gnomeExtensions.arcmenu
+    gnomeExtensions.gtk4-desktop-icons-ng-ding
+    gnomeExtensions.noannoyance-fork
   ];
 }
