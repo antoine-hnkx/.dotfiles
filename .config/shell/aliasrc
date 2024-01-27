@@ -1,9 +1,10 @@
 # Dotfiles
 alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias lzd="lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
-# Default options
-alias mkdir="mkdir -pv"
-alias ls="ls -hN --color=auto --group-directories-first"
+# NixOS
+alias nixos-regenerate-hardware-config="nixos-generate-config --show-hardware-config > $XDG_CONFIG_HOME/nixos/hosts/$HOST/hardware-configuration.nix"
+alias nixos-switch="sudo nixos-rebuild switch --flake $XDG_CONFIG_HOME/nixos/.#$HOST"
 
 # Package manager
 alias yay-update="yay -Syu"
@@ -12,12 +13,18 @@ alias yay-remove="yay -Qeq | fzf | xargs -o yay -Rns"
 alias yay-clean="yes | yay -Scc"
 alias yay-list="yay -Qet"
 
-# NixOS
-alias nixos-regenerate-hardware-config="nixos-generate-config --show-hardware-config > $XDG_CONFIG_HOME/nixos/hosts/$HOST/hardware-configuration.nix"
-alias nixos-switch="sudo nixos-rebuild switch --flake $XDG_CONFIG_HOME/nixos/.#$HOST"
-
-# Other aliases
-alias ll="ls -Alhv"
+# Aliases
+alias mkdir="mkdir -pv"
+alias ls="eza -x --icons=always --group-directories-first"
+alias ll="eza -Al --icons=always"
+alias lt="eza -Al --icons=always --tree"
+alias ltg="eza -Al --icons=always --tree --git-ignore"
+alias cat="bat"
+alias top="btm"
+alias htop="btm"
+alias du="dust"
+alias df="duf"
+alias find="fd"
+alias watch="viddy"
 alias vim="nvim"
 alias lz="lazygit"
-alias lzd="lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME"

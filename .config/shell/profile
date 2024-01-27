@@ -1,3 +1,3 @@
 if [[ "$(tty)" = "/dev/tty1" ]]; then
-	pgrep wayfire || wayfire
+	# pgrep wayfire || wayfire
 fi

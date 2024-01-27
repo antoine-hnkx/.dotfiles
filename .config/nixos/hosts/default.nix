@@ -14,10 +14,12 @@
         ../modules/i18n/be_en.nix
         ../modules/fonts/jetbrains-mono.nix
         ../modules/shell/zsh.nix
-        ../modules/networking/network-manager.nix
-        ../modules/audio/pipewire.nix
-        ../modules/wm/gnome.nix
+		../modules/wm/gnome.nix
         ../modules/bootloader/systemd-boot.nix
+        ../modules/services/audio.nix
+		../modules/services/bluetooth.nix
+		../modules/services/networking.nix
+		../modules/services/remote-access.nix
       ];
     };
 
@@ -33,10 +35,10 @@
         ../modules/i18n/be_en.nix
         ../modules/fonts/jetbrains-mono.nix
         ../modules/shell/zsh.nix
-        ../modules/networking/network-manager.nix
-        ../modules/audio/pipewire.nix
-        ../modules/wm/gnome.nix
+		../modules/wm/gnome.nix
         ../modules/bootloader/systemd-boot.nix
+        ../modules/services/audio.nix
+		../modules/services/remote-access.nix
       ];
     };
   }

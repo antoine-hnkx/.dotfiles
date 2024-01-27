@@ -1,9 +1,10 @@
 # Default applications
-export TERMINAL=alacritty
-export BROWSER=google-chrome
-export FILE_BROWSER=nautilus
-export EDITOR=nvim
-export VISUAL_EDITOR=code
+export TERMINAL="alacritty"
+export TERMINAL_RUN_COMMAND="alacritty -e"
+export BROWSER="google-chrome"
+export FILE_BROWSER="nautilus"
+export EDITOR="nvim"
+export VISUAL_EDITOR="code"
 
 # Update PATH
 export PATH="$PATH:$HOME/.local/bin"

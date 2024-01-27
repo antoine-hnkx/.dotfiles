@@ -7,22 +7,22 @@
 	{
 		"key": "ctrl+o",
 		"command": "workbench.action.quickOpen",
-		"description": "Open file.",
+		"description": "Open file."
 	},
 	{
 		"key": "ctrl+shift+o",
 		"command": "revealFileInOS",
-		"description": "Show file in file explorer.",
+		"description": "Show file in file explorer."
 	},
 	{
 		"key": "ctrl+n",
 		"command": "explorer.newFile",
-		"description": "Create new file.",
+		"description": "Create new file."
 	},
 	{
 		"key": "ctrl+shift+n",
 		"command": "explorer.newFolder",
-		"description": "Create new folder.",
+		"description": "Create new folder."
 	},
 	{
 		"key": "ctrl+shift+f",
@@ -63,6 +63,10 @@
 	{
 		"key": "ctrl+shift+g",
 		"command": "git-graph.view",
-		"description": "Show Git Graph view.",
+		"description": "Show Git Graph view."
+	},
+	{
+		"key": "ctrl+[Quote]",
+		"command": "workbench.action.terminal.toggleTerminal"
 	}
 ]

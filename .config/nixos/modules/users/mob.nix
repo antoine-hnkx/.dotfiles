@@ -1,6 +1,6 @@
 { pkgs, ... }:
 
-{  
+{
   users.users.mob = {
     uid = 1000;
     isNormalUser = true;
@@ -11,10 +11,32 @@
       vscode
       starship
       alacritty
+	  vlc
       amberol
       inkscape
       bruno
-      # TODO docker better-ls-thing lazygit fzf tldr btop-or-something-else ETC... check github stars + node with version manager + pnpm
+	  discord
+	  lazygit
+	  lazydocker
+	  docker
+	  killall
+	  fzf
+	  yt-dlp
+	  ffmpeg
+	  asdf-vm
+	  du-dust
+	  dogdns
+	  httpie
+	  rclone
+	  rsync
+	  tldr
+	  fd
+	  eza
+	  bat
+	  viddy
+	  duf
+	  tokei
+	  bottom
     ];
   };
 }

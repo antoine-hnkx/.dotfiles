@@ -1,6 +1,5 @@
 # Shared configuration
-# TODO add software to pkgs list (system & user)
-# TODO make google-chrome .desktop in ~/.local/share/applications/ with '--disable-features=...' 
+# TODO make google-chrome .desktop in ~/.local/share/applications/ with '--disable-features=...'
 #      add to dotfiles and path or find other way take inspo from /usr/local/share/applications/ or /usr/share/applications/
 #      + make one for neovim to replace current one not opening, open with "allacritty -e nvim"
 { nixpkgs, ... }:
@@ -8,9 +7,15 @@
 {
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  # Enable garbage collector
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 2d";
+  };
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  # Disable text/html documentation and documentation desktop entries
+  # Disable text/html documentation and related desktop entries (example: Nix Manual)
   documentation.doc.enable = false;
 
   # This value determines the NixOS release from which the default
