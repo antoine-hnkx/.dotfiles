@@ -2,6 +2,6 @@
 
 {
   programs.zsh.enable = true;
-	programs.zsh.histFile = "$XDG_STATE_HOME/zsh/history";
+  programs.zsh.histFile = "$HOME/.config/zsh/history";
   users.defaultUserShell = pkgs.zsh;
 }

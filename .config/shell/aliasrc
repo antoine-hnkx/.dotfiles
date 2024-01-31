@@ -1,10 +1,12 @@
-# Dotfiles
+# Dotfiles"version": "0.1.0",
 alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 alias lzd="lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias cc="code $XDG_CONFIG_HOME"
 
 # NixOS
 alias nixos-regenerate-hardware-config="nixos-generate-config --show-hardware-config > $XDG_CONFIG_HOME/nixos/hosts/$HOST/hardware-configuration.nix"
 alias nixos-switch="sudo nixos-rebuild switch --flake $XDG_CONFIG_HOME/nixos/.#$HOST"
+alias nixos-update="nix flake update $XDG_CONFIG_HOME/nixos"
 
 # Package manager
 alias yay-update="yay -Syu"
@@ -13,7 +15,19 @@ alias yay-remove="yay -Qeq | fzf | xargs -o yay -Rns"
 alias yay-clean="yes | yay -Scc"
 alias yay-list="yay -Qet"
 
+# Git
+alias gs="git status -sb"
+alias gc="git commit"
+alias gc="git commit -m"
+alias gl="git --no-pager log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gco="git checkout"
+alias gcob="git checkout -b"
+alias gbr="branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate"
+
 # Aliases
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 alias mkdir="mkdir -pv"
 alias ls="eza -x --icons=always --group-directories-first"
 alias ll="eza -Al --icons=always"

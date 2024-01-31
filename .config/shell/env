@@ -1,7 +1,7 @@
 # Default applications
 export TERMINAL="alacritty"
 export TERMINAL_RUN_COMMAND="alacritty -e"
-export BROWSER="google-chrome-stable"
+export BROWSER="vivaldi"
 export FILE_BROWSER="nautilus"
 export EDITOR="nvim"
 export VISUAL_EDITOR="code"
@@ -34,3 +34,4 @@ export HISTFILE="$XDG_STATE_HOME/zsh/history"
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
 export WAYFIRE_CONFIG_FILE="$XDG_CONFIG_HOME/wayfire/wayfire.ini"
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
