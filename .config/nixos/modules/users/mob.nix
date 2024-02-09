@@ -21,7 +21,7 @@
       starship
 
       # Programming related
-      vscode-fhs
+      vscode
       neovim
       github-desktop
       bruno
@@ -43,6 +43,7 @@
       lazydocker
       killall
       fzf
+      mcfly
       du-dust
       dogdns
       httpie
