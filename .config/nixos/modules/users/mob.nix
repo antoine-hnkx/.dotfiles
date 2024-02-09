@@ -22,6 +22,7 @@
 
       # Programming related
       vscode-fhs
+      neovim
       github-desktop
       bruno
       docker

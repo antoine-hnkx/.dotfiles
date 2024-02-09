@@ -1,7 +1,4 @@
 # Shared configuration
-# TODO make google-chrome .desktop in ~/.local/share/applications/ with '--disable-features=...'
-#      add to dotfiles and path or find other way take inspo from /usr/local/share/applications/ or /usr/share/applications/
-#      + make one for neovim to replace current one not opening, open with "allacritty -e nvim"
 { nixpkgs, ... }:
 
 {
@@ -25,5 +22,4 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.11"; # Did you read the comment?
-
 }
