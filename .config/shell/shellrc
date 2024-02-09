@@ -3,4 +3,5 @@ source "$XDG_CONFIG_HOME/shell/aliasrc"
 
 # Prompts
 export PS1="(%y%) [%n@%M]: "
+eval "$(mcfly init zsh)"
 [ "$TERM" != "linux" ] && eval "$(starship init zsh)"
