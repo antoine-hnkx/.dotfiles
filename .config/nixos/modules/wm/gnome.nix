@@ -41,6 +41,7 @@
     gnome-music
     gnome-weather
     gnome-clocks
+    gnome.gnome-user-share
   ]);
 
   environment.systemPackages = with pkgs; [
