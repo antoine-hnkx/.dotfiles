@@ -63,10 +63,17 @@
 	{
 		"key": "ctrl+shift+g",
 		"command": "git-graph.view",
-		"description": "Show Git Graph view."
+		"description": "Show git graph view."
 	},
 	{
 		"key": "ctrl+[Quote]",
-		"command": "workbench.action.terminal.toggleTerminal"
+		"command": "workbench.action.terminal.toggleTerminal",
+		"description": "Toggle terminal view."
+	},
+	{
+		"key": "ctrl+numpad_divide",
+		"command": "editor.action.blockComment",
+		"when": "editorTextFocus && !editorReadonly",
+		"description": "Toggle comment on selection."
 	}
 ]

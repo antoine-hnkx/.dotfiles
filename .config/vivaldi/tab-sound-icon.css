@@ -1,0 +1,17 @@
+.tab-header .favicon {
+  order: 1;
+  transform: none !important;
+}
+
+.tab-header .title {
+  order: 2;
+}
+
+.tab-header .tab-audio {
+  position: initial !important;
+  order: 3;
+}
+
+.tab-header .close {
+  order: 4;
+}

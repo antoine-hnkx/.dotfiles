@@ -16,6 +16,7 @@
       amberol
       inkscape
       discord
+      gcolor3
 
       # Prompt
       starship
