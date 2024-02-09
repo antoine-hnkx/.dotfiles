@@ -6,12 +6,10 @@
   };
 
   outputs = { self, nixpkgs, ... }:
-    let
-      system = "x86_64-linux";
-    in {
+    {
       nixosConfigurations = (
         import ./hosts {
-          inherit nixpkgs system;
+          inherit nixpkgs;
         }
       );
     };
