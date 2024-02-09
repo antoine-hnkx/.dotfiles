@@ -9,6 +9,10 @@ export VISUAL_EDITOR="code"
 # Update PATH
 export PATH="$PATH:$HOME/.local/bin"
 
+# NPM related
+export DISABLE_OPENCOLLECTIVE=true
+export ADBLOCK=true
+
 # Disable Files
 export LESSHISTFILE=-
 
