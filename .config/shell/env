@@ -15,6 +15,7 @@ export ADBLOCK=true
 
 # McFly History related
 export MCFLY_RESULTS=25
+export MCFLY_RESULTS_SORT="LAST_RUN"
 
 # Disable Files
 export LESSHISTFILE=-
