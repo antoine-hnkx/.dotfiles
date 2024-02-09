@@ -12,6 +12,8 @@
       # Common software
       vivaldi
       alacritty
+      yazi
+      ueberzugpp # Image preview in terminal, used by yazi in alacritty
       vlc
       amberol
       inkscape

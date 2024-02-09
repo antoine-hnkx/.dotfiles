@@ -1,6 +1,6 @@
 # Enable case-insensitive completion
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*' cache-path $XDG_CACHE_HOME/zsh/zcompcache
-autoload -Uz compinit && compinit -d {$XDG_CACHE_HOME}/zsh/zcompdump-$ZSH_VERSION
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
+autoload -Uz compinit && compinit
 
 # Disable command history if starting with space
 setopt histignorespace
