@@ -24,8 +24,8 @@
     };
 
   fileSystems."/mnt/Data" =
-    { device = "/dev/disk/by-uuid/125033DF5033C86D";
-      fsType = "ntfs3";
+    { device = "/dev/disk/by-uuid/7E7D-2DC5";
+      fsType = "exfat";
     };
 
   swapDevices = [ ];
