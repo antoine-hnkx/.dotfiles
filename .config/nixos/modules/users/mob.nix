@@ -1,13 +1,11 @@
 { pkgs, ... }:
 
 {
-  programs.steam.enable = true;
-
   users.users.mob = {
     uid = 1000;
     isNormalUser = true;
     description = "Mob";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       # Common software
       vivaldi
@@ -28,7 +26,6 @@
       neovim
       github-desktop
       bruno
-      docker
 
       # Programming environments
       nodejs
