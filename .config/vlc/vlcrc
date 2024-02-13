@@ -1,0 +1,23 @@
+﻿[qt]
+qt-recentplay=0
+qt-continue=0
+qt-privacy-ask=0
+qt-auto-raise=0
+
+[core]
+one-instance=1
+video-title-show=0
+audio-language=fr
+sub-language=none
+
+# Keybinds
+key-faster=d
+key-slower=s
+key-rate-normal=g
+key-rate-faster-fine=r
+key-rate-slower-fine=
+
+# Remove default keybinds
+key-subdelay-down=
+key-deinterlace=
+key-random=
