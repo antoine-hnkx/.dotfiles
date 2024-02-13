@@ -33,6 +33,7 @@
       # CLI Software
       yt-dlp
       ffmpeg
+      mkvtoolnix-cli
       rclone
       rsync
 
