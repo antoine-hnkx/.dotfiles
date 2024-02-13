@@ -2,6 +2,8 @@
 { nixpkgs, ... }:
 
 {
+  # Force nix to respect XDG spec
+  nix.settings.use-xdg-base-directories = true;
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # Enable garbage collector

@@ -1,6 +1,6 @@
 # Tuxedo specific configuration
 
-{ nixpkgs, ... }:
+{ ... }:
 
 {
   imports = [ ./hardware-configuration.nix ];

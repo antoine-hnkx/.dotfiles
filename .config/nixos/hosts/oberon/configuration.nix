@@ -1,6 +1,6 @@
 # Oberon specific configuration
 
-{ nixpkgs, pkgs, ... }:
+{ ... }:
 
 {
   imports = [ ./hardware-configuration.nix ];
