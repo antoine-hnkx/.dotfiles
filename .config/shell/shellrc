@@ -1,7 +1,12 @@
+# Variables
+SHELL_NAME=$(echo $SHELL | rev | cut -d/ -f1 | rev)
+
 # Aliases
 source "$XDG_CONFIG_HOME/shell/aliasrc"
 
+# Reverse Search Utility
+eval "$(mcfly init $SHELL_NAME)"
+
 # Prompts
 export PS1="(%y%) [%n@%M]: "
-eval "$(mcfly init zsh)"
-[ "$TERM" != "linux" ] && eval "$(starship init zsh)"
+[ "$TERM" != "linux" ] && eval "$(starship init $SHELL_NAME)"
