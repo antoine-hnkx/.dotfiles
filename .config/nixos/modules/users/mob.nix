@@ -24,11 +24,13 @@
       neovim
       github-desktop
       bruno
+      beekeeper-studio
 
       # Programming environments
       nodejs
       nodePackages.pnpm
       jdk21
+      postgresql
 
       # CLI Software
       yt-dlp
