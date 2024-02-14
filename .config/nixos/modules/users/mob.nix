@@ -30,6 +30,7 @@
       nodejs
       nodePackages.pnpm
       jdk21
+      awscli2
 
       # CLI Software
       yt-dlp
@@ -41,6 +42,7 @@
       # CLI Utilities
       lazygit
       lazydocker
+      k9s
       killall
       fzf
       mcfly
