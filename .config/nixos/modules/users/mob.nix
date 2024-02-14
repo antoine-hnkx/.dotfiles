@@ -30,7 +30,6 @@
       nodejs
       nodePackages.pnpm
       jdk21
-      postgresql
 
       # CLI Software
       yt-dlp

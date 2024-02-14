@@ -19,8 +19,9 @@
         ../modules/services/audio.nix
         ../modules/services/bluetooth.nix
         ../modules/services/networking.nix
-        ../modules/services/remote-access.nix
-				../modules/services/virtualisation.nix
+        ../modules/services/ssh.nix
+        ../modules/services/docker.nix
+        ../modules/services/postgresql.nix
       ];
     };
 
@@ -39,8 +40,9 @@
         ../modules/wm/gnome.nix
         ../modules/bootloader/systemd-boot.nix
         ../modules/services/audio.nix
-        ../modules/services/remote-access.nix
-				../modules/services/virtualisation.nix
+        ../modules/services/ssh.nix
+        ../modules/services/docker.nix
+        ../modules/services/postgresql.nix
       ];
     };
   }
