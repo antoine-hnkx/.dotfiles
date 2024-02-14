@@ -1,6 +1,7 @@
 .tab-header .favicon {
   order: 1;
   transform: none !important;
+  filter: none !important;
 }
 
 .tab-header .title {
