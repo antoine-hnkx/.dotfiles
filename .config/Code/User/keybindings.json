@@ -75,5 +75,17 @@
 		"command": "editor.action.blockComment",
 		"when": "editorTextFocus && !editorReadonly",
 		"description": "Toggle comment on selection."
+	},
+	{
+		"key": "alt+up",
+		"when": "editorTextFocus && !editorReadonly",
+		"command": "editor.action.moveLinesUpAction",
+		"description": "Move lines up."
+	},
+	{
+		"key": "alt+down",
+		"command": "editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly",
+		"description": "Move lines down."
 	}
 ]
