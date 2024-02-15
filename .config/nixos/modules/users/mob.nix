@@ -12,6 +12,7 @@
       alacritty
       vlc
       amberol
+      libreoffice
       inkscape
       discord
       gcolor3
