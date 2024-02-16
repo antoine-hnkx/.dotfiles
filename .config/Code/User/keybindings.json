@@ -87,5 +87,10 @@
 		"command": "editor.action.moveLinesDownAction",
 		"when": "editorTextFocus && !editorReadonly",
 		"description": "Move lines down."
+	},
+	{
+		"key": "ctrl+h",
+		"command": "toggleexcludedfiles.toggle",
+		"description": "Toggle excluded files from file explorer."
 	}
 ]
