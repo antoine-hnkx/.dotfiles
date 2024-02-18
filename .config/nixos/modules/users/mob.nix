@@ -21,7 +21,11 @@
       starship
 
       # Programming related
-      vscode
+      (vscode-with-extensions.override {
+        vscodeExtensions = with vscode-extensions; [
+          bbenoist.nix
+        ];
+      })
       neovim
       github-desktop
       bruno
