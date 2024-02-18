@@ -5,12 +5,11 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs, ... }:
-    {
-      nixosConfigurations = (
-        import ./hosts {
-          inherit nixpkgs;
-        }
-      );
-    };
+  outputs = { self, nixpkgs, ... }: {
+    nixosConfigurations = (
+      import ./hosts {
+        inherit nixpkgs;
+      }
+    );
+  };
 }

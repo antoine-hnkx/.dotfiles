@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{ pkgs, ... }: {
   users.users.mob = {
     uid = 1000;
     isNormalUser = true;
@@ -23,13 +21,24 @@
       # Programming related
       (vscode-with-extensions.override {
         vscodeExtensions = with vscode-extensions; [
-          amodio.toggle-excluded-files
-          drcika.apc-extension
           enkia.tokyo-night
           esbenp.prettier-vscode
           jnoortheen.nix-ide
           mhutchie.git-graph
-          PKief.material-icon-theme
+          pkief.material-icon-theme
+        ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+          {
+            name = "apc-extension";
+            publisher = "drcika";
+            version = "0.3.6";
+            sha256 = "rpp4TUntnsfXi7O/pmgrM8B609v8QTDHuwGAVLfKycA=";
+          }
+          {
+            name = "toggle-excluded-files";
+            publisher = "amodio";
+            version = "2023.4.1012";
+            sha256 = "j0zAAnaGIzKTlt8QXvaEGwRb8dWnGkcB/2/XVH+lHXQ=";
+          }
         ];
       })
       neovim

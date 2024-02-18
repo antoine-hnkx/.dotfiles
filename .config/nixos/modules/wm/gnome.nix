@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{ pkgs, ... }: {
   services.xserver.enable = true;
   services.xserver.excludePackages = with pkgs; [
     xterm
@@ -12,7 +10,6 @@
 
   environment.gnome.excludePackages = (with pkgs; [
     baobab
-    #loupe
     evince
     snapshot
     gnome-console

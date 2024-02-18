@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{ ... }: {
   time.timeZone = "Europe/Brussels";
   console.keyMap = "be-latin1";
   services.xserver.layout = "be";
