@@ -23,7 +23,13 @@
       # Programming related
       (vscode-with-extensions.override {
         vscodeExtensions = with vscode-extensions; [
-          bbenoist.nix
+          amodio.toggle-excluded-files
+          drcika.apc-extension
+          enkia.tokyo-night
+          esbenp.prettier-vscode
+          jnoortheen.nix-ide
+          mhutchie.git-graph
+          PKief.material-icon-theme
         ];
       })
       neovim
@@ -32,6 +38,7 @@
       beekeeper-studio
 
       # Programming environments
+      nixpkgs-fmt
       nodejs
       nodePackages.pnpm
       jdk21

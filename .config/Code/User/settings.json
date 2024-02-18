@@ -114,5 +114,10 @@
 	"workbench.statusBar.visible": false,
 	"workbench.tips.enabled": false,
 	"workbench.tree.indent": 20,
-	"workbench.tree.renderIndentGuides": "none"
+	"workbench.tree.renderIndentGuides": "none",
+	"[nix]": {
+		"editor.tabSize": 2,
+		"editor.insertSpaces": true,
+		"editor.defaultFormatter": "jnoortheen.nix-ide"
+	}
 }
