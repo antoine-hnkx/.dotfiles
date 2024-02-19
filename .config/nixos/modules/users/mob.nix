@@ -28,6 +28,12 @@
           pkief.material-icon-theme
         ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
+            name = "better-comments";
+            publisher = "aaron-bond";
+            version = "3.0.2";
+            sha256 = "hQmA8PWjf2Nd60v5EAuqqD8LIEu7slrNs8luc3ePgZc=";
+          }
+          {
             name = "apc-extension";
             publisher = "drcika";
             version = "0.3.6";
