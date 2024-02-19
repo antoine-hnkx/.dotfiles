@@ -21,6 +21,7 @@
       # Programming related
       (vscode-with-extensions.override {
         vscodeExtensions = with vscode-extensions; [
+          dbaeumer.vscode-eslint
           enkia.tokyo-night
           esbenp.prettier-vscode
           jnoortheen.nix-ide
