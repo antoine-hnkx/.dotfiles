@@ -1,54 +1,69 @@
 /* Order tab header elements, more specifically show the audio icon before the close button */
 .tab-header .favicon {
-  order: 1;
-  transform: none !important;
-  filter: none !important;
+	order: 1;
+	transform: none !important;
+	filter: none !important;
 }
 
 .tab-header .title {
-  order: 2;
+	order: 2;
 }
 
 .tab-header .tab-audio {
-  position: initial !important;
-  order: 3;
+	position: initial !important;
+	order: 3;
 }
 
 .tab-header .close {
-  order: 4;
+	order: 4;
 }
 
-/* Always show close button on active tab unless it is a mini tab */
+/* Show close button when hovering a non-active tab */
+.tab:not(.active):hover .tab-header .close {
+	display: flex !important;
+}
+
+/* Show close button on non-active small tabs */
+.tab:not(.active).tab-small:not(.tab-mini) .tab-header .close {
+	display: flex !important;
+}
+
+/* Custom rules for small tabs to make close button fit */
+.tab.tab-small:not(.tab-mini) .tab-header .close {
+	flex: 0 0 auto !important;
+}
+.tab.tab-small:not(.tab-mini) .tab-header .favicon {
+	flex: 0 1 100% !important;
+	min-width: 0;
+	overflow: hidden;
+}
+
+/* Hide favicon on mini tabs to make place for close button */
+.tab:not(.active).tab-mini:hover .tab-header .favicon {
+	display: none !important;
+}
+
+/* Show close button on active tab unless it is a mini tab */
 .tab.active:not(.tab-mini) .tab-header .close {
 	display: flex !important;
 }
 
-/* Always show close button when hovering a non-active tab unless it is a mini tab */
-.tab:not(.active):not(.tab-mini):hover .tab-header .close {
+/* Hide favicon when hovering a non-active mini tab */
+.tab:not(.active).tab-mini:hover .tab-header .close {
 	display: flex !important;
 }
 
-/* And also hide title */
-.tab:not(.active):not(.tab-mini):hover .tab-header .title {
-	opacity: 0 !important;
-}
-
 /* Hide audio icon on small tabs when active */
-.tab.active.tab-small .tab-header .tab-audio {
+.tab.active.tab-small:not(.tab-mini).audio-on .tab-header .tab-audio {
 	display: none !important;
 }
 
-/* Hide title on small tabs when active */
-.tab.active.tab-small .tab-header .title {
-	opacity: 0 !important;
+/* Hide audio icon on small tabs */
+.tab.tab-small:not(.tab-mini).audio-on .tab-header .tab-audio {
+	display: none !important;
 }
 
-/* Hide audio icon when hovering small tabs */
-.tab:hover.tab-small.audio-on .tab-header .tab-audio {
-  display: none;
-}
-
-/* Never display audio icon on mini tabs */
+/* Hide audio icon on mini tabs */
 .tab.tab-mini.audio-on .tab-header .tab-audio {
-  display: none;
+	display: none !important;
 }
