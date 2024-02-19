@@ -8,3 +8,17 @@
 	autoSetupRemote = true
 [pull]
 	default = current
+[merge]
+	conflictStyle = zdiff3
+[diff]
+	algorithm = histogram
+[url "git@github.com:"]
+	pushInsteadOf = https://github.com/
+[branch]
+	sort = -committerdate
+[log]
+	date = iso
+[gpg]
+	format = ssh
+[rebase]
+	updateRefs = true
