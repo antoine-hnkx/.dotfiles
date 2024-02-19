@@ -9,6 +9,7 @@ alias nixos-switch="sudo nixos-rebuild switch --flake $XDG_CONFIG_HOME/nixos/.#$
 alias nixos-update="nix flake update $XDG_CONFIG_HOME/nixos"
 alias nixos-list-generations="sudo nix-env --list-generations --profile /nix/var/nix/profiles/system"
 alias nixos-remove-generations="sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations"
+alias dev="nix develop --command $SHELL"
 
 # Package manager
 alias yay-update="yay -Syu"
