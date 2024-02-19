@@ -34,6 +34,12 @@
             sha256 = "rpp4TUntnsfXi7O/pmgrM8B609v8QTDHuwGAVLfKycA=";
           }
           {
+            name = "pretty-ts-errors";
+            publisher = "yoavbls";
+            version = "0.5.3";
+            sha256 = "JSCyTzz10eoUNu76wNUuvPVVKq4KaVKobS1CAPqgXUA=";
+          }
+          {
             name = "toggle-excluded-files";
             publisher = "amodio";
             version = "2023.4.1012";
