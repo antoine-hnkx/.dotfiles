@@ -38,6 +38,11 @@
 	overflow: hidden;
 }
 
+/* Hide title on small tabs */
+.tab.tab-small:not(.tab-mini) .tab-header .title {
+	display: none !important;
+}
+
 /* Hide favicon on mini tabs to make place for close button */
 .tab:not(.active).tab-mini:hover .tab-header .favicon {
 	display: none !important;
