@@ -96,6 +96,7 @@
 	"terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
 	"terminal.integrated.fontSize": 14,
 	"terminal.integrated.lineHeight": 1,
+	"terminal.integrated.mouseWheelScrollSensitivity": 0.3,
 	"terminal.integrated.shellIntegration.decorationsEnabled": "gutter",
 	"terminal.integrated.tabs.enabled": false,
 	"typescript.updateImportsOnFileMove.enabled": "always",
