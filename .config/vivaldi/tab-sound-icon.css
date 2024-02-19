@@ -1,3 +1,4 @@
+/* Order tab header elements, more specifically show the audio icon before the close button */
 .tab-header .favicon {
   order: 1;
   transform: none !important;
@@ -15,4 +16,39 @@
 
 .tab-header .close {
   order: 4;
+}
+
+/* Always show close button on active tab unless it is a mini tab */
+.tab.active:not(.tab-mini) .tab-header .close {
+	display: flex !important;
+}
+
+/* Always show close button when hovering a non-active tab unless it is a mini tab */
+.tab:not(.active):not(.tab-mini):hover .tab-header .close {
+	display: flex !important;
+}
+
+/* And also hide title */
+.tab:not(.active):not(.tab-mini):hover .tab-header .title {
+	opacity: 0 !important;
+}
+
+/* Hide audio icon on small tabs when active */
+.tab.active.tab-small .tab-header .tab-audio {
+	display: none !important;
+}
+
+/* Hide title on small tabs when active */
+.tab.active.tab-small .tab-header .title {
+	opacity: 0 !important;
+}
+
+/* Hide audio icon when hovering small tabs */
+.tab:hover.tab-small.audio-on .tab-header .tab-audio {
+  display: none;
+}
+
+/* Never display audio icon on mini tabs */
+.tab.tab-mini.audio-on .tab-header .tab-audio {
+  display: none;
 }
