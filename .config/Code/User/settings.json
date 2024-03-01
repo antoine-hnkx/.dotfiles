@@ -35,6 +35,7 @@
 	"editor.showDeprecated": true,
 	"editor.showFoldingControls": "always",
 	"editor.showUnused": true,
+	"editor.stickyScroll.enabled": false,
 	"editor.suggest.insertMode": "replace",
 	"editor.suggest.showWords": false,
 	"editor.tabSize": 2,
