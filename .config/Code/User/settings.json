@@ -44,6 +44,7 @@
 	"explorer.compactFolders": false,
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmPasteNative": false,
 	"extensions.autoCheckUpdates": false,
 	"extensions.ignoreRecommendations": true,
 	"files.autoSave": "afterDelay",
