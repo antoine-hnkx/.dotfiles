@@ -3,6 +3,9 @@
 	"breadcrumbs.enabled": false,
 	"debug.javascript.codelens.npmScripts": "never",
 	"editor.acceptSuggestionOnCommitCharacter": false,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit"
+	},
 	"editor.cursorBlinking": "blink",
 	"editor.cursorSmoothCaretAnimation": "off",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
