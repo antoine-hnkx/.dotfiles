@@ -5,6 +5,7 @@
     specialArgs = {
       inherit nixpkgs;
     };
+    system = "x86_64-linux";
     modules = [
       ./configuration.nix
       ./tuxedo/configuration.nix
@@ -28,6 +29,7 @@
     specialArgs = {
       inherit nixpkgs;
     };
+    system = "x86_64-linux";
     modules = [
       ./configuration.nix
       ./oberon/configuration.nix
