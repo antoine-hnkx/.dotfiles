@@ -1,7 +1,7 @@
 { ... }: {
   time.timeZone = "Europe/Brussels";
   console.keyMap = "be-latin1";
-  services.xserver.layout = "be";
+  services.xserver.xkb.layout = "be";
 
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.extraLocaleSettings = {
