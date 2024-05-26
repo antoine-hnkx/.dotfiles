@@ -1,7 +1,7 @@
 {
-	"apc.font.family": "JetBrainsMono Nerd Font",
+	// General Settings
 	"breadcrumbs.enabled": false,
-	"debug.javascript.codelens.npmScripts": "never",
+	"diffEditor.ignoreTrimWhitespace": false,
 	"editor.acceptSuggestionOnCommitCharacter": false,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": "explicit"
@@ -9,7 +9,7 @@
 	"editor.cursorBlinking": "blink",
 	"editor.cursorSmoothCaretAnimation": "off",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.detectIndentation": false,
+	"editor.detectIndentation": true,
 	"editor.folding": false,
 	"editor.fontFamily": "JetBrainsMono Nerd Font",
 	"editor.fontLigatures": true,
@@ -22,7 +22,7 @@
 	"editor.hover.delay": 200,
 	"editor.hover.enabled": true,
 	"editor.insertSpaces": false,
-	"editor.lightbulb.enabled": false,
+	"editor.lightbulb.enabled": "off",
 	"editor.lineHeight": 1.8,
 	"editor.lineNumbers": "on",
 	"editor.linkedEditing": true,
@@ -42,7 +42,6 @@
 	"editor.suggest.insertMode": "replace",
 	"editor.suggest.showWords": false,
 	"editor.tabSize": 2,
-	"emmet.triggerExpansionOnTab": true,
 	"explorer.autoReveal": false,
 	"explorer.compactFolders": false,
 	"explorer.confirmDelete": false,
@@ -72,27 +71,6 @@
 	"git.confirmSync": false,
 	"git.decorations.enabled": false,
 	"git.enableSmartCommit": true,
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"material-icon-theme.hidesExplorerArrows": true,
-	"prettier.arrowParens": "always",
-	"prettier.bracketSameLine": true,
-	"prettier.bracketSpacing": true,
-	"prettier.enable": true,
-	"prettier.endOfLine": "lf",
-	"prettier.htmlWhitespaceSensitivity": "css",
-	"prettier.jsxSingleQuote": false,
-	"prettier.printWidth": 120,
-	"prettier.proseWrap": "preserve",
-	"prettier.quoteProps": "as-needed",
-	"prettier.requireConfig": false,
-	"prettier.semi": false,
-	"prettier.singleAttributePerLine": false,
-	"prettier.singleQuote": false,
-	"prettier.tabWidth": 2,
-	"prettier.trailingComma": "all",
-	"prettier.useEditorConfig": true,
-	"prettier.useTabs": true,
-	"prettier.withNodeModules": false,
 	"scm.diffDecorations": "none",
 	"security.workspace.trust.enabled": false,
 	"telemetry.telemetryLevel": "off",
@@ -106,7 +84,6 @@
 	"terminal.integrated.mouseWheelScrollSensitivity": 0.3,
 	"terminal.integrated.shellIntegration.decorationsEnabled": "gutter",
 	"terminal.integrated.tabs.enabled": false,
-	"typescript.updateImportsOnFileMove.enabled": "always",
 	"update.mode": "manual",
 	"update.showReleaseNotes": false,
 	"window.commandCenter": false,
@@ -127,65 +104,94 @@
 	"workbench.tips.enabled": false,
 	"workbench.tree.indent": 20,
 	"workbench.tree.renderIndentGuides": "none",
+
+	// Languages Settings
 	"[nix]": {
-		"editor.tabSize": 2,
+		"editor.defaultFormatter": "jnoortheen.nix-ide",
 		"editor.insertSpaces": true,
-		"editor.defaultFormatter": "jnoortheen.nix-ide"
+		"editor.tabSize": 2
 	},
+	"debug.javascript.codelens.npmScripts": "never",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+
+	// Extensions Settings
+	"apc.font.family": "JetBrainsMono Nerd Font",
 	"better-comments.tags": [
 		{
-			"tag": "!",
+			"backgroundColor": "transparent",
+			"bold": false,
 			"color": "#FF2D00",
+			"italic": false,
 			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
+			"tag": "!",
+			"underline": false
 		},
 		{
-			"tag": "?",
+			"backgroundColor": "transparent",
+			"bold": false,
 			"color": "#3498DB",
+			"italic": false,
 			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
+			"tag": "?",
+			"underline": false
 		},
 		{
-			"tag": "//",
+			"backgroundColor": "transparent",
+			"bold": false,
 			"color": "#474747",
+			"italic": false,
 			"strikethrough": true,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
+			"tag": "//",
+			"underline": false
 		},
 		{
-			"tag": "fixme",
+			"backgroundColor": "transparent",
+			"bold": false,
 			"color": "#FFE828",
+			"italic": false,
 			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
+			"tag": "fixme",
+			"underline": false
 		},
 		{
-			"tag": "todo",
+			"backgroundColor": "transparent",
+			"bold": false,
 			"color": "#FF8C00",
+			"italic": false,
 			"strikethrough": false,
-			"underline": false,
-			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
+			"tag": "todo",
+			"underline": false
 		},
 		{
-			"tag": "*",
-			"color": "#15CA00",
-			"strikethrough": false,
-			"underline": false,
 			"backgroundColor": "transparent",
 			"bold": false,
-			"italic": false
+			"color": "#15CA00",
+			"italic": false,
+			"strikethrough": false,
+			"tag": "*",
+			"underline": false
 		}
-	]
+	],
+	"emmet.triggerExpansionOnTab": true,
+	"material-icon-theme.hidesExplorerArrows": true,
+	"prettier.arrowParens": "always",
+	"prettier.bracketSameLine": true,
+	"prettier.bracketSpacing": true,
+	"prettier.enable": true,
+	"prettier.endOfLine": "lf",
+	"prettier.htmlWhitespaceSensitivity": "css",
+	"prettier.jsxSingleQuote": false,
+	"prettier.printWidth": 120,
+	"prettier.proseWrap": "preserve",
+	"prettier.quoteProps": "as-needed",
+	"prettier.requireConfig": false,
+	"prettier.semi": false,
+	"prettier.singleAttributePerLine": false,
+	"prettier.singleQuote": false,
+	"prettier.tabWidth": 2,
+	"prettier.trailingComma": "all",
+	"prettier.useEditorConfig": true,
+	"prettier.useTabs": true,
+	"prettier.withNodeModules": false
 }
