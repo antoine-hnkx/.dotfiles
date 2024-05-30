@@ -10,6 +10,11 @@
     dates = "weekly";
     options = "--delete-older-than 2d";
   };
+  # Enable automatic nix store optimisation
+  nix.optimise = {
+    automatic = true;
+    dates = [ "weekly" ];
+  };
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   # Disable text/html documentation and related desktop entries (example: Nix Manual)
