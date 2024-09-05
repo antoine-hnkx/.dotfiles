@@ -91,6 +91,7 @@
       duf
       tokei
       bottom
+      delta
     ];
   };
 }
