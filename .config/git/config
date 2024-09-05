@@ -10,6 +10,8 @@
 	default = current
 [merge]
 	conflictStyle = zdiff3
+[core]
+	pager = delta
 [diff]
 	algorithm = histogram
 [url "git@github.com:"]
