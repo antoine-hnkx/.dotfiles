@@ -3,49 +3,48 @@
   services.xserver.excludePackages = with pkgs; [
     xterm
   ];
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.displayManager.gdm.enable = true;
+  services.desktopManager.gnome.enable = true;
 
   programs.dconf.enable = true;
 
   environment.gnome.excludePackages = (with pkgs; [
+    atomix
     baobab
-    evince
-    snapshot
-    gnome-console
-    gnome-connections
-    gnome-photos
-    gnome-tour
-  ]) ++ (with pkgs.gnome; [
     cheese
     epiphany
+    evince
     geary
+    hitori
+    iagno
+    simple-scan
+    snapshot
     tali
     totem
-    iagno
-    hitori
-    atomix
     yelp
-    simple-scan
     gnome-calculator
+    gnome-clocks
+    gnome-console
+    gnome-connections
     gnome-calendar
     gnome-characters
     gnome-contacts
+    gnome-font-viewer
     gnome-initial-setup
     gnome-logs
-    gnome-font-viewer
     gnome-maps
     gnome-music
-    gnome-weather
-    gnome-clocks
+    gnome-photos
+    gnome-tour
     gnome-user-share
+    gnome-weather
   ]);
 
   environment.systemPackages = with pkgs; [
-    gnome.gnome-tweaks
+    gnome-tweaks
     gnomeExtensions.dash-to-panel
     gnomeExtensions.arcmenu
     gnomeExtensions.gtk4-desktop-icons-ng-ding
-    gnomeExtensions.noannoyance-fork
+    # gnomeExtensions.noannoyance-fork # not in nixpkgs anymore
   ];
 }

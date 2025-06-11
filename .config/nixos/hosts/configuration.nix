@@ -17,6 +17,10 @@
   };
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  # Temporarily allow the following insecure packages
+  nixpkgs.config.permittedInsecurePackages = [
+    "beekeeper-studio-5.2.9"
+  ];
   # Disable text/html documentation and related desktop entries (example: Nix Manual)
   documentation.doc.enable = false;
 
