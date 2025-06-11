@@ -55,7 +55,7 @@
         ];
       })
       neovim
-      github-desktop
+      gitbutler
       bruno
       beekeeper-studio
 

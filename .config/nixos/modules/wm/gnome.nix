@@ -12,6 +12,7 @@
     atomix
     baobab
     cheese
+    decibels
     epiphany
     evince
     geary
