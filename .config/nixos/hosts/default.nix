@@ -14,7 +14,7 @@
       ../modules/i18n/be_en.nix
       ../modules/fonts/jetbrains-mono.nix
       ../modules/shell/zsh.nix
-      ../modules/wm/gnome.nix
+      ../modules/wm/cosmic.nix
       ../modules/bootloader/systemd-boot.nix
       ../modules/services/audio.nix
       ../modules/services/bluetooth.nix
@@ -38,7 +38,7 @@
       ../modules/i18n/be_en.nix
       ../modules/fonts/jetbrains-mono.nix
       ../modules/shell/zsh.nix
-      ../modules/wm/gnome.nix
+      ../modules/wm/cosmic.nix
       ../modules/bootloader/systemd-boot.nix
       ../modules/services/audio.nix
       ../modules/services/ssh.nix
