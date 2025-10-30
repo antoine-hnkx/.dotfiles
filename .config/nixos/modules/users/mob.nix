@@ -80,7 +80,7 @@
       killall
       fzf
       mcfly
-      du-dust
+      dust
       dogdns
       httpie
       tealdeer
